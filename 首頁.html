@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   <title>一筆成名</title>
+   <link rel='icon' href='favicon.ico'>
+   <style type="text/css">
+        body { 
+            background-image:url("背景.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top center;
+            background-size: cover;
+            z-index: -1; 
+        }
+        #logo { 
+            width:35%;
+            display: block; 
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -9%;
+        }
+        #japan1 { 
+            display: block; 
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 3%;
+            width: 18%;
+        }
+        #japan2 { 
+            display: block; 
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1%;
+            width: 18%;
+        }
+        #dload { 
+            display: block; 
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1%;
+            width: 18%;
+        }
+</style>
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function()
+{
+    $("#japan1").mouseover(function()
+    {$("#japan1").attr("src","平假名2.png")})
+    $("#japan1").mouseleave(function()
+    {$("#japan1").attr("src","平假名1.png")})
+    $("#japan2").mouseover(function()
+    {$("#japan2").attr("src","片假名2.png")})
+    $("#japan2").mouseleave(function()
+    {$("#japan2").attr("src","片假名1.png")})
+    $("#dload").mouseover(function()
+    {$("#dload").attr("src","說明檔案2.png")})
+    $("#dload").mouseleave(function()
+    {$("#dload").attr("src","說明檔案1.png")})
+})
+    </script>
+</head>
+<body>
+    
+    <img id="logo" src="標題.png"></img>
+    <img id="japan1" src="平假名1.png" onclick="window.location.href='平假名.html'"></img>
+    <img id="japan2" src="片假名1.png" onclick="window.location.href='片假名.html'"></img>
+    <a href="一筆成名-00857018+00857026.pptx"><img id="dload" src="說明檔案1.png"></img></a>
+    
+</body>
+</html>
